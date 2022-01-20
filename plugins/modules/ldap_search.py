@@ -90,7 +90,7 @@ import traceback
 
 from ansible.module_utils.basic import AnsibleModule, missing_required_lib
 from ansible.module_utils.common.text.converters import to_native
-from ansible_collections.community.general.plugins.module_utils.ldap import LdapGeneric, gen_specs
+from ansible_collections.andrewshulgin.ldap_search.plugins.module_utils.ldap import LdapGeneric, gen_specs
 
 LDAP_IMP_ERR = None
 try:
