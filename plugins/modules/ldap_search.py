@@ -57,6 +57,16 @@ options:
     description:
       - Set to C(true) to return the full attribute schema of entries, not
         their attribute values. Overrides I(attrs) when provided.
+  client_cert:
+    type: path
+    description:
+      - PEM formatted certificate chain file to be used for SSL client authentication.
+      - Required if I(client_key) is defined.
+  client_key:
+    type: path
+    description:
+      - PEM formatted file that contains your private key to be used for SSL client authentication.
+      - Required if I(client_cert) is defined.
 extends_documentation_fragment:
     - community.general.ldap.documentation
 """
